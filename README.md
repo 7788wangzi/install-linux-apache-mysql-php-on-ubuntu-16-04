@@ -133,16 +133,16 @@ sudo mysql_secure_installation
 如果您使用弱密码与自动配置MySQL用户凭据的软件（例如phpMyAdmin的Ubuntu软件包）结合使用，将会导致问题。
 可以安全地禁用验证，但是您应该始终对数据库凭据使用强的，唯一的密码。
 回答y（是），或其他任何继续不启用。 
->>
+```
   VALIDATE PASSWORD PLUGIN can be used to test passwords
   and improve security. It checks the strength of password
   and allows the users to set only those passwords which are
   secure enough. Would you like to setup VALIDATE PASSWORD plugin?
 
   Press y|Y for Yes, any other key for No:
-
+```
 系统将要求您选择一个级别的密码验证。 请记住，如果你输入2，为最高水平，你会尝试设置不包含数字，大小写字母和特殊字符，或者它是基于通用的字典单词的密码时收到错误。 
->>
+```
   There are three levels of password validation policy:
 
   LOW    Length >= 8
@@ -150,14 +150,14 @@ sudo mysql_secure_installation
   STRONG Length >= 8, numeric, mixed case, special characters and dictionary                  file
 
   Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 1
-
+```
 如果启用了密码验证，则会显示现有root密码的密码强度，并询问您是否要更改该密码。 如果你很高兴与您当前密码，输入n为“无”的提示： 
->>
+```
   Using existing password for root.
 
   Estimated strength of the password: 100
   Change the password for root ? ((Press y|Y for Yes, any other key for No) : n
-
+```
 对于剩余的问题，您应该按Y和命中每个提示Enter键。 这将删除一些匿名用户和测试数据库，禁用远程根登录，并加载这些新规则，以便MySQL立即尊重我们所做的更改。 
 此时，您的数据库系统现已设置，我们可以继续。
 
