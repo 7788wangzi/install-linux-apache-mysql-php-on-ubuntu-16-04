@@ -250,6 +250,33 @@ sudo rm /var/www/html/info.php
 
 如果以后需要再次访问信息，您可以随时重新创建此页面。
 
+## 第5步：安装phpMyAdmin
+phpMyAdmin是一个MySQL数据库的Web管理界面，要方便使用MySQL，推荐安装它:
+```
+apt-get install phpmyadmin
+```
+如果遇到提示，这样选择：
+```
+Web server to reconfigure automatically: <-- apache2
+Configure database for phpmyadmin with dbconfig-common? <-- No
+```
+然后，你可以访问phpMyAdmin: 
+```
+http://your_server_IP_address/phpmyadmin
+```
+
+如果遇到如下错误
+![Error access phpmyadmin](phpmyadmin-error.PNG)
+
+使用如下解决方案：
+```
+sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+sudo service apache2 restart
+```
+然后，重新访问phpMyAdmin
+
+
 ## 结论
 现在你已经安装了一个LAMP，你有许多选择下一步做什么。 基本上，您已经安装了一个平台，将允许您在服务器上安装大多数类型的网站和Web软件。 
 作为紧接着的下一步，您应该确保通过HTTPS提供与Web服务器的连接是安全的。 这里最简单的方法是用Let的加密与自由的TLS / SSL证书保护您的网站。
