@@ -240,7 +240,7 @@ phpinfo();
 http://your_server_IP_address/info.php
 ```
 你来的页面应该看起来像这样：
-![php home page](/media/php.PNG)
+![php home page](/media/php5.PNG)
 从PHP的角度来看，这个页面基本上提供了你的服务器的信息。 它对于调试和确保您的设置正确应用非常有用。 
 如果这是成功的，那么你的PHP工作正常。 
 您可能想要在此测试后删除此文件，因为它实际上可能会向未经授权的用户提供有关您的服务器的信息。 为此，您可以键入：
