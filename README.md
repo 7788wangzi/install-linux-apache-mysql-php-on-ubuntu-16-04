@@ -266,7 +266,7 @@ http://your_server_IP_address/phpmyadmin
 ```
 
 如果遇到如下错误
-![Error access phpmyadmin](phpmyadmin-error.PNG)
+![Error access phpmyadmin](/media/phpmyadminerror.PNG)
 
 使用如下解决方案：
 ```
