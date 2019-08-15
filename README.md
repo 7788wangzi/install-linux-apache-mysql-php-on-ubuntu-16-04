@@ -258,7 +258,7 @@ sudo rm /var/www/html/info.php
 ## 第5步：安装phpMyAdmin
 phpMyAdmin是一个MySQL数据库的Web管理界面，要方便使用MySQL，推荐安装它:
 ```
-apt-get install phpmyadmin
+sudo apt-get install phpmyadmin
 ```
 如果遇到提示，这样选择：
 ```
