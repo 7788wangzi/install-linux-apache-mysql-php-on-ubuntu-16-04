@@ -225,6 +225,11 @@ Apr 13 14:28:43 ubuntu-16-lamp systemd[1]: Started LSB: Apache2 web server.
 我们称这个脚本info.php 。 为了使Apache找到该文件并正确地提供它，它必须保存到一个非常特定的目录，这被称为“web根”。 
 在Ubuntu 14.04，该目录位于/var/www/html/ 。 我们可以通过键入以下内容在该位置创建文件：
 ```
+sudo touch /var/www/html/info.php
+```
+
+然后打开文件
+```
 sudo nano /var/www/html/info.php
 ```
 这将打开一个空白文件。 我们想把以下文本，这是有效的PHP代码，在文件内：
